@@ -1,3 +1,6 @@
+- []()
+- [Memory](#Memory)
+
 # Complexity analysis
 
 ## Complexity analysis
@@ -37,4 +40,21 @@ Broadly speaking memory is the foundational layer of computing, where all data a
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Big O Notation
+# Big O notation
+
+## Big O notation
+The notation used to descibe the time complexity and space complexity of algorithms
+
+Variables used in Big O notation denote the size of inputs to algorithms. For example, O(n) might be the time complexity of an algorithm that traverses through an array of length n; simiraly, O(n+m) might be the time complexity of na algorithm that traverses through an array of length n and through a string length m
+
+Examples of common complexties and their big O:
+- Constatnt O(1)
+- Logarithm O(log(n))
+- Lineral O(n)
+- Log-lineral O(log(n))
+- Quadratic O(n2)
+- Cubic O(n3)
+- Exponential O(2to n)
+- Factorial O(n!)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
