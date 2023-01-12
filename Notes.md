@@ -58,3 +58,94 @@ Examples of common complexties and their big O:
 - Factorial O(n!)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Logarithms
+
+## Logarithm
+
+A mathematical concept that widely used in Computer Science and thats defined by the following equation:
+
+![image](https://user-images.githubusercontent.com/49185097/212162177-9e655003-6500-4ec8-b824-fba6d319810d.png)
+
+In the context of coding interviews the logarithm is used to describe the complexity analysis of algorithm and its useage always implies a logarithm of base 2. In other words. the logarithm used in the context of coding interviews is defined by the following equation:
+
+![image](https://user-images.githubusercontent.com/49185097/212162242-2ef39886-416c-4193-b73c-85488548d515.png)
+
+In plain English, if an algorithm has a logarithmc time complexity (O(log(n)), where n is the size of the input), then whenever the algorithm's input doubles in size (i.e., whenever n doubles), the number of operations needed to complete the algorithm only increase by one unit. Conversely, an algorithm with linerar time complexity would see its number of operations double if its input size doubled.
+
+As an example, a linear-time complexity algorithm with an input size 1,000 might take roughly 1,000 iperations to complete wheres a logarithmic-time complexity algorithm with the same input would take roughly 10 operations to complete, since 210 ~= 1,000.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Arrays
+
+## Array
+A linear collection of data values that are accessible at numbered indices, starting at index 0
+
+The following are an array's standard operations and their corresponding time complexities:
+- Accessing a value at a gicen index: O(1)
+- updating a value at given index: O(1)
+- Inserting a value at the beginning: O(n)
+- Inserting a value in the middle: O(n)
+- Inserting a value at the end:
+	- amortized O(1) when dealing with a dynamic array
+	- O(n) when dealing with a static array
+- Removing a value at the beginning: O(n)
+- Removing a value in the middle: O(n)
+- Removing a value at the end: O(1)
+- Copying the array: O(n)
+
+A static array is an implementation of an array that allocates a fixed amount of money of memory to be used for storing the array's values. Appending values the array therefore involves coping the entire array and allocating new memory fo it, accounting for the extra space needed for the newly appended value. This is a linear-time operation.
+
+A dynamic array is an array that peemptiveky allocates double the amount of memory needed to store the arrayls values. Appending values to the array is a constant-time operation until the allocated memory is filled up, at which point the array is copied and double the momory is once again allocated fo it. This implementation leads to an amortized constat-time insertion-at-end operation
+
+A lot of popular programming languages like JavaScript and Python implement arrays as dynamic arrays.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Strings
+
+## Strings
+One of the fundamental data types in Computer Science are stored in memory as arrays of integers, where each character in a given string is mapped
+to an integer via some character standard like ASCII.
+
+String behave much like normal arraysm with the main distinctionbeing that, in most programming languages (c++ is a noteable exception), string are immutable, meaning that they can not be edited after creation. This also means that simple operations like appanding a character to a string are more expensive than they might appear.
+
+The canonical example of an operation that is deceprively expensive due to string immutabillity is the following:
+```
+string = "this is a string"
+newString = ""
+
+for character in string:
+	newString += character
+```
+
+The operation above has a time complexity of O(n to 2) where n is the length of string, because each addition of a character to newString creates an entirely new string and is itself an O(n) operation. Therefore , n O(n) operations are performed , leading to an O(n to 2) time-complexity operational overall.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Graphs
+
+## Graphs
+A collection of nodes or values called vertices that might be related; relations between vertices are called edges.
+
+Many things in life can be represented by graphs; for example a social network can be represented by a graph whose vertices are users and whose edges are friendship between the users. Similarly, a city map can be represented by a graph whose vertices are locations in the city whose edges are roads between the locations.
+
+## Grap Cycle
+
+## Acyclic Graph
+A graph that has no cycles
+
+## Cyclic Graph
+A graph that has at least one cycle
+
+## Directed Graph
+
+## Undirected Graph
+
+## Connected Graph
+
+
+
+
+
